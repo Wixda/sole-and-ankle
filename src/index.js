@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import GlobalStyles from './components/GlobalStyles';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
     <GlobalStyles />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
